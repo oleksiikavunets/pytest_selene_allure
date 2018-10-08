@@ -1,7 +1,7 @@
 import pytest
 import allure
 from src.main.forsampletest.pages.SearchPage import SearchPage
-from tests.utils.data_provider import DataProvider
+from src.tests.utils.data_provider import DataProvider
 
 
 @allure.feature('Wikipedia Search')

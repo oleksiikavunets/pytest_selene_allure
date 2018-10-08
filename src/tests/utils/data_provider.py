@@ -8,7 +8,7 @@ class DataProvider:
 
     @staticmethod
     def __getFilePath__(file_name):
-        return fr"{os.getcwd()}/tests/resources/testdata/{file_name}.csv"
+        return fr"{os.getcwd()}/src/tests/resources/testdata/{file_name}.csv"
 
     @staticmethod
     def loadData1(file_name):
