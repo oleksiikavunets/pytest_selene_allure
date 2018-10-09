@@ -19,9 +19,9 @@ def setup(request):
     yield
     if rerun_controller.are_reruns_out():
         bc.set_test_session_closed()
-    browser.quit()
-    print("\n>>> After Session\n")
-    print("CLOSING SSH CONNECTION\n")
+        browser.quit()
+        print("\n>>> After Session\n")
+        print("CLOSING SSH CONNECTION\n")
 
 
 @pytest.fixture(scope="class")
