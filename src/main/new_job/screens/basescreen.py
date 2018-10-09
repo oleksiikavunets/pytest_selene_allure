@@ -1,4 +1,4 @@
-from selene.api import config, browser
+from selene import config, browser
 import re
 
 
@@ -6,7 +6,6 @@ class BaseScreen:
 
     @classmethod
     def open(cls, *urlarg):
-        config.browser_name = 'chrome'
         if 'url' in dir(cls):
             browser.open_url(cls.url)
         else:

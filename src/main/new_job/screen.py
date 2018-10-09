@@ -1,6 +1,6 @@
 from time import sleep
-from new_job.screens.search_screen import SearchScreen
-from new_job.screens.ticket_return_screen import TicketReturnScreen
+from src.main.new_job.screens.search_screen import SearchScreen
+from src.main.new_job.screens.ticket_return_screen import TicketReturnScreen
 
          #   mediaPage.formAux.click\
          #       .buttonActive("clickable").click

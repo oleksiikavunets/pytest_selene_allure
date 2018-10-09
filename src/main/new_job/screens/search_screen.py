@@ -1,13 +1,12 @@
-from new_job.controls.button import Button
-from new_job.controls.textfield import Field
-from new_job.controls.authorize_form import Form
-from selene.api import s
-from new_job.screens.basescreen import BaseScreen
+from src.main.new_job.controls.button import Button
+from src.main.new_job.controls.textfield import Field
+from src.main.new_job.controls.authorize_form import Form
+from src.main.new_job.screens.basescreen import BaseScreen
 
 
 class SearchScreen(BaseScreen):
 
-    url = 'https://booking.uz.gov.ua/'
+    url = 'https://booking.uz.gov.ua'
 
    # def __init__(self):
     fromField = '#search-frm > form > div.search-block > div.stations > div:nth-child(1) > input'

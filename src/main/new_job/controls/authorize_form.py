@@ -1,8 +1,8 @@
-from new_job.controls.basecontrol import *
+from src.main.new_job.controls.basecontrol import *
 from selene.api import s
-from new_job.controls.button import *
+from src.main.new_job.controls.button import *
 from selene.api import *
-from new_job.searcher.searchby import search
+from src.main.new_job.searcher.searchby import search
 
 
 class Form(BaseControl):
