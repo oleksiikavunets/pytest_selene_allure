@@ -6,7 +6,7 @@ from src.main.new_job.screens.basescreen import BaseScreen
 
 class SearchScreen(BaseScreen):
 
-    url = 'https://booking.uz.gov.ua'
+    url = '/'
 
    # def __init__(self):
     fromField = '#search-frm > form > div.search-block > div.stations > div:nth-child(1) > input'
@@ -15,7 +15,7 @@ class SearchScreen(BaseScreen):
     authorizeForm = ['#search-frm > form > div.search-block > div.opt > div.date '
                               '> input[type="text"]:nth-child(3)',
                               {'authorizeButton': '/html/body/div[1]/div/div[3]/div[6]/div/form/div[4]/button',
-                               'emailField ': '/html/body/div[1]/div/div[3]/div[6]/div/form/input',
+                               'emailField': '/html/body/div[1]/div/div[3]/div[6]/div/form/input',
                                'passwordField': '/html/body/div[1]/div/div[3]/div[6]/div/form/div[2]/input',
                                'activateAuthorizeButton': '/html/body/div[1]/div/div[3]/div[6]/a'}]
 

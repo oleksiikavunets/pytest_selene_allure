@@ -18,7 +18,7 @@ class Field(BaseControl):
             pass
 
     def send_keys(self, keys):
-        if self.field.is_displayed():
-            return self.field.send_keys(keys)
-        else:
-            pass
+     #   if self.field.is_displayed():
+        return self.field.send_keys(keys)
+       # else:
+       #     pass

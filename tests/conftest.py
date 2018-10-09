@@ -9,7 +9,7 @@ from src.main.common.webdriver_config import configure_driver
 
 
 @pytest.fixture(scope="session")
-def setup(request):
+def setup_session(request):
     if not bc.test_session_started:
         print("\n>>> Before Session")
         bc.set_test_session_started()
@@ -40,6 +40,7 @@ def setup_function(request):
         rerun_controller.add_rerun()
 
     yield
+    browser.driver().delete_all_cookies()
     print("\n         >>> After Function")
 
 
