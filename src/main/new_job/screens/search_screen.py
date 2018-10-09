@@ -9,6 +9,7 @@ class SearchScreen(BaseScreen):
     url = '/'
 
    # def __init__(self):
+    logoButton = 'body > div.b-page-header > div > div.top-row > a.uz-logo'
     fromField = '#search-frm > form > div.search-block > div.stations > div:nth-child(1) > input'
     toField = '#search-frm > form > div.search-block > div.stations > div:nth-child(3) > input'
     submitButton = '#search-frm > form > div.button > div > button'

@@ -3,7 +3,7 @@ from flaky import flaky
 from selene import config, browser
 from time import sleep
 
-from selene.support.conditions import have
+from selene.support.conditions import have, be
 
 from src.main.common.base_config import MAX_RUN, EMAIL, PASSWORD
 from src.main.new_job.screens.search_screen import SearchScreen
@@ -33,6 +33,11 @@ class TestUz:
 
         btnNameAfter = authorizeForm.activateAuthorizeButton.text
         assert btnNameAfter == EMAIL.split("@")[0]
+
+    def test_logo_is_displayed(self):
+        SearchScreen.open()
+        SearchScreen().logoButton.should(be.visible)
+
 
     def test_can_not_login(self):
         SearchScreen.open()
