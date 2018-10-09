@@ -8,3 +8,5 @@ allure_results/
 \.idea/
 
 \.pytest_cache/
+
+reports/
