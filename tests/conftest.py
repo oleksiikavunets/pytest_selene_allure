@@ -1,13 +1,10 @@
 import allure
 import pytest
 from allure_commons.types import AttachmentType
-from selene import browser, config
+from selene import browser
 
-from src.main.common.base_config import bc, HOST, PORT
+from src.main.common.base_config import bc
 from src.main.common.rerun_controller import rerun_controller
-from selenium.webdriver.chrome.options import Options
-from selenium import webdriver
-
 from src.main.common.webdriver_config import configure_driver
 
 
@@ -39,8 +36,8 @@ def setup_class():
 def setup_function(request):
     print("\n         >>> Before Function")
 
-    # if rerun_controller.is_test_listened(request.node.name):
-    #     rerun_controller.add_rerun()
+    if rerun_controller.is_test_listened(request.node.name):
+        rerun_controller.add_rerun()
 
     yield
     print("\n         >>> After Function")

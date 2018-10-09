@@ -25,4 +25,5 @@ MAX_RUN = bc.config["max_run"]
 REMOTE = bc.config["remote"]
 HOST = bc.config["host"]
 PORT = str(bc.config["port"])
+BASE_URL = bc.config["url"]
 

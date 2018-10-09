@@ -1,13 +1,14 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from src.main.common.base_config import REMOTE, HOST, PORT
+from src.main.common.base_config import REMOTE, HOST, PORT, BASE_URL
 from selene import config, browser
 
 
 def configure_driver():
     config.browser_name = 'chrome'
     config.reports_folder = 'reports'
+    config.base_url = BASE_URL
 
     if REMOTE:
         _configure_remote_driver()
