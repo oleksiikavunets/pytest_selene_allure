@@ -1,7 +1,7 @@
-from src.main.new_job.controls.button import Button
-from src.main.new_job.controls.textfield import Field
+from src.main.web.controls.button import Button
+from src.main.web.controls.textfield import Field
 from selene.api import s
-from src.main.new_job.screens.basescreen import BaseScreen
+from src.main.web.screens.basescreen import BaseScreen
 
 
 class TicketReturnScreen(BaseScreen):

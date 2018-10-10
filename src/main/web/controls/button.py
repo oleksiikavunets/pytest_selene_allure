@@ -1,9 +1,9 @@
-from src.main.new_job.controls.basecontrol import *
-from src.main.new_job.controls.checker import it_is_what_it_is
+from src.main.web.controls.basecontrol import *
+from src.main.web.controls.checker import it_is_what_it_is
 from selene.api import s
 
 
-#@it_is_what_it_is
+# @it_is_what_it_is
 class Button(BaseControl):
     __slots__ = 'is_displayed',
 
@@ -21,10 +21,4 @@ class Button(BaseControl):
             return getattr(self.button, 'click')()
         else:
             pass
-       # return self.button.click()
-
-
-
-
-
-
+    # return self.button.click()

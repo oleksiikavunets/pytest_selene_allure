@@ -1,4 +1,3 @@
-
 def it_is_what_it_is(cls):
     controls = {'Button': ['submit', 'link', 'link active'], 'Field': ['text', 'password', 'email']}
 
@@ -7,5 +6,5 @@ def it_is_what_it_is(cls):
             return cls(*args, **kwargs)
         else:
             pass
-    return check_type
 
+    return check_type
