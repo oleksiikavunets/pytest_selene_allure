@@ -1,5 +1,5 @@
-from src.main.new_job.controls.basecontrol import *
-from src.main.new_job.controls.checker import it_is_what_it_is
+from src.main.web.controls.basecontrol import *
+from src.main.web.controls.checker import it_is_what_it_is
 from selene.api import s
 
 

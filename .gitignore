@@ -10,3 +10,5 @@ allure_results/
 \.pytest_cache/
 
 reports/
+
+*.pyc
