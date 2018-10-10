@@ -8,3 +8,7 @@ allure_results/
 \.idea/
 
 \.pytest_cache/
+
+*.png
+
+*.pyc
