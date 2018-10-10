@@ -9,6 +9,10 @@ allure_results/
 
 \.pytest_cache/
 
+<<<<<<< HEAD
 *.png
 
 *.pyc
+=======
+reports/
+>>>>>>> master
