@@ -22,6 +22,12 @@ class TestUz:
         SearchScreen.open()
         assert browser.title() == 'Online reservation and purchase tickets - Ukrzaliznytsia'
 
+    @allure.title('Logo visibility verification')
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_logo_is_displayed(self):
+        SearchScreen.open()
+        SearchScreen().logoButton.should(be.visible)
+
     @allure.title('User authorization')
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.parametrize('is_passed, email, password',
@@ -39,9 +45,3 @@ class TestUz:
         btn_name_after = authorize_form.activateAuthorizeButton.text
         Assert.assert_with_condition(btn_name_after == email.split("@")[0], is_passed,
                                      message=f"Email={email} and password={password}")
-
-    @allure.title('Logo visibility verification')
-    @allure.severity(allure.severity_level.NORMAL)
-    def test_logo_is_displayed(self):
-        SearchScreen.open()
-        SearchScreen().logoButton.should(be.visible)
