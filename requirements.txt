@@ -22,6 +22,7 @@ psutil==5.4.7
 py==1.6.0
 pymongo==3.7.1
 pyocr==0.5.3
+PyPOM==2.1.0
 pytest==3.8.0
 pytest-repeat==0.7.0
 PyYAML==3.13
@@ -33,3 +34,10 @@ urllib3==1.23
 virtualenv==16.0.0
 virtualenv-clone==0.3.0
 webdriver-manager==1.7
+zope.component==4.5
+zope.deferredimport==4.3
+zope.deprecation==4.3.0
+zope.event==4.4
+zope.hookable==4.2.0
+zope.interface==4.5.0
+zope.proxy==4.3.1
