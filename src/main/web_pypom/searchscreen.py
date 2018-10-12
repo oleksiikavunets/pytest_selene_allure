@@ -65,3 +65,5 @@ class SearchScreen(Page, CustomWebView):
         def enter_button(self):
             return self.find_element_with_wait(self.driver, self.timeout, By.XPATH,
                                                '/html/body/div[1]/div/div[3]/div[6]/div/form/div[4]/button')
+
+
