@@ -21,8 +21,8 @@ class BaseConfig:
 
 bc = BaseConfig()
 
-# EMAIL = bc.config["email"]
-# PASSWORD = bc.config["password"]
+EMAIL = bc.config["email"]
+PASSWORD = bc.config["password"]
 MAX_RUN = bc.config["max_run"]
 REMOTE_RUN = bc.config["remote_run"]
 REMOTE_HOST = bc.config["remote_host"]

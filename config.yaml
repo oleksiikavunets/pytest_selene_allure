@@ -1,8 +1,8 @@
 max_run: 3
-#email: qavunets@gmail.com
-#password: tttt1111
+email: qavunets@gmail.com
+password: tttt1111
 base_url: https://booking.uz.gov.ua
-remote_run: True
+remote_run: False
 remote_host: http://192.168.152.128
 remote_port: 9515
 
