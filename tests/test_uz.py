@@ -29,7 +29,7 @@ class TestUz:
     @allure.title('User authorization')
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.parametrize('is_passed, email, password',
-                             DataProvider.loadData(__file__, "test_can_login"))
+                             DataProvider.load_data(__file__, "test_can_login"))
     def test_can_login(self, is_passed, email, password):
         search_screen = SearchScreen().open()
         authorize_form = search_screen.authorize_form
