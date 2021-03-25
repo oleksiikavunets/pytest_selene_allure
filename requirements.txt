@@ -25,7 +25,7 @@ pyocr==0.5.3
 PyPOM==2.1.0
 pytest==3.8.0
 pytest-repeat==0.7.0
-PyYAML==3.13
+PyYAML==5.4
 requests==2.19.1
 selene==1.0.0a13
 selenium==2.53.1
